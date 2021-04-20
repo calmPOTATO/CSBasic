@@ -19,6 +19,10 @@ namespace CSBasic
             /*
              *  comment
              */
+
+            //출력
+            Console.Write("이건 개행되지 않는다. = print");
+            Console.WriteLine("이건 개행된다");
         }
     }
 }
