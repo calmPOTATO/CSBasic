@@ -49,6 +49,42 @@ namespace CSBasic
             Console.WriteLine("미림여\t자정보과학고");
             Console.WriteLine("미림여자\t정보과학고");
             Console.WriteLine("미림여자정\t보과학고");
+
+
+            //문자열 연결
+            Console.WriteLine("ABC" + "EFG");
+            Console.WriteLine('A' + 'C');
+            Console.WriteLine("ABC" + "E");
+            Console.WriteLine("ABC"[2]);
+            //Console.WriteLine("ABC"[3]); IndexOutofBounds 에러남 
+
+
+
+            //comparison operator
+            Console.WriteLine(52 == 163);
+            Console.WriteLine(52 != 163);
+            Console.WriteLine(52 > 163);
+            Console.WriteLine(52 < 163);
+            Console.WriteLine(52 >= 163);
+            Console.WriteLine(52 <= 163);
+
+            //logic operator
+            Console.WriteLine(!(true));
+            Console.WriteLine(true || false);
+            Console.WriteLine(true && false);
+
+            //단항 연산자 - unary operator
+            Console.WriteLine(!(true));
+            int i = 0;
+            i++;
+            //이항 연산자 - binary operator
+            i = 1 + 2;
+            //삼항 연산자 - ternary operator
+            int j;
+            j = (i > 3) ? 0 : 1;
+            Console.WriteLine(3 < i && i < 8);
+            Console.WriteLine(i < 3 || 8 < i);
+
         }
     }
 }
