@@ -8,8 +8,13 @@ namespace CSBasic
 {
     class Program
     {
+        //var 키워드는 지역변수로만 사용가능
+        //var name = "한나래";
+        var name = "한나래";
+
         static void Main(string[] args)
         {
+
             int alpha;
             int Alpha;
             //int a★; C#은 이모지로 변수명 지정 못함
@@ -133,6 +138,9 @@ namespace CSBasic
             Console.WriteLine(_double.GetType());
             Console.WriteLine(_char.GetType());
             Console.WriteLine(_string.GetType());
+
+            var somea = "마음에 드는 문자열";
+            
 
         }
     }
