@@ -85,6 +85,24 @@ namespace CSBasic
             Console.WriteLine(3 < i && i < 8);
             Console.WriteLine(i < 3 || 8 < i);
 
+            int a = 2147483640;
+            int b = 100000000;
+            Console.WriteLine((long)a + b);
+
+            Console.WriteLine(double.MaxValue);
+            Console.WriteLine(-int.MaxValue);
+
+            Console.WriteLine(3L);
+            Console.WriteLine(3L);
+
+            //증감 연산자 - 섞어서 쓸 경우
+            //전위, 후위에 따라서 출력값이 바뀐다
+            int num = 10;
+            Console.WriteLine(num++);
+            Console.WriteLine(num--);
+            Console.WriteLine(++num);
+            Console.WriteLine(--num);
+
         }
     }
 }
