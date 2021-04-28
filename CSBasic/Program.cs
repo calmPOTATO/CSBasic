@@ -10,7 +10,7 @@ namespace CSBasic
     {
         //var 키워드는 지역변수로만 사용가능
         //var name = "한나래";
-        var name = "한나래";
+        //var name = "한나래";
 
         static void Main(string[] args)
         {
@@ -140,7 +140,59 @@ namespace CSBasic
             Console.WriteLine(_string.GetType());
 
             var somea = "마음에 드는 문자열";
-            
+
+            var somec = 123456;
+            var isLoop = true;
+            Console.WriteLine(somec.GetType());
+            string input;
+            while(isLoop)
+            {
+                Console.WriteLine("입력");
+                input = Console.ReadLine();
+                if (input.Equals("q"))
+                {
+                    break;
+                } else
+                {
+                    Console.WriteLine(input);
+                }
+            }
+
+
+            var al = (int)10.0;
+            var b1 = (float)10;
+            var c1 = (double)10;
+
+            long longNumber = 2147483637L + 2100000000L;
+            int intNumber = (int)longNumber;
+            Console.WriteLine(longNumber);
+
+            long longNumber2 = 52773;
+            int intNumber2 = (int)longNumber2;
+            Console.WriteLine(intNumber2);
+
+            Console.WriteLine("int, long, float, double MaxValue");
+            Console.WriteLine(int.MaxValue);
+            Console.WriteLine(long.MaxValue);
+            Console.WriteLine(float.MaxValue);
+            Console.WriteLine(double.MaxValue);
+
+            Console.WriteLine("문자열의 숫자로의 형변환");
+            Console.WriteLine(int.Parse("52"));
+            Console.WriteLine(long.Parse("273"));
+            Console.WriteLine(float.Parse("52.273"));
+            Console.WriteLine(double.Parse("103.32"));
+            Console.WriteLine(int.Parse("52").GetType());
+            Console.WriteLine(long.Parse("273").GetType());
+            Console.WriteLine(float.Parse("52.273").GetType());
+            Console.WriteLine(double.Parse("103.32").GetType());
+
+            //잘못된 형변환
+            Console.WriteLine(int.Parse("52.273"));
+            Console.WriteLine(int.Parse("abc"));
+            Console.WriteLine(int.Parse("육십삼"));
+            Console.WriteLine(int.Parse("Seven"));
+
 
         }
     }
