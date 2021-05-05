@@ -49,6 +49,77 @@ namespace CSBasic32
             {
                 Console.WriteLine("플랑크톤");
             }
+
+            Console.WriteLine("이번달은 몇 월인가요? ");
+            int input = int.Parse(Console.ReadLine());
+
+            switch(input)
+            {
+                case 12: case 1: case 2:
+                    Console.WriteLine("겨울");
+                    break;
+                case 3: case 4: case 5:
+                    Console.WriteLine("봄");
+                    break;
+                case 6: case 7: case 8:
+                    Console.WriteLine("여름");
+                    break;
+                case 9: case 10: case 11:
+                    Console.WriteLine("가을");
+                    break;
+                default:
+                    Console.WriteLine("지구에 있는거 맞나요?");
+                    break;
+            }
+
+            string input_2 = Console.ReadLine();
+            int number = int.Parse(input_2);
+            Console.WriteLine((number > 0) ? "자연수입니다." : "자연수가 아닙니다.");
+
+            Console.Write("입력:");
+            string line = Console.ReadLine();
+            if(line.Contains("안녕"))
+            {
+                Console.WriteLine("너도 안녕~");
+            } else if (line.Contains("바보"))
+            {
+                Console.WriteLine("너도 바보야!");
+            } else if(line.Contains("밥"))
+            {
+                Console.WriteLine("배고파!");
+            } else
+            {
+                Console.WriteLine("심심해~");
+            }
+
+            Boolean isLoop = true;
+
+            while (isLoop) {
+                ConsoleKeyInfo info = Console.ReadKey();
+                switch (info.Key)
+                {
+                    case ConsoleKey.DownArrow:
+                        Console.WriteLine("아래");
+                        break;
+                    case ConsoleKey.UpArrow:
+                        Console.WriteLine("위");
+                        break;
+                    case ConsoleKey.LeftArrow:
+                        Console.WriteLine("왼쪽");
+                        break;
+                    case ConsoleKey.RightArrow:
+                        Console.WriteLine("오른쪽");
+                        break;
+                    case ConsoleKey.Escape:
+                        Console.Write("으악!");
+                        isLoop = false;
+                        break;
+                    default:
+                        Console.WriteLine("UnknownKey!");
+                        break;
+                 }
+            }
+    
         }
     }
 }
