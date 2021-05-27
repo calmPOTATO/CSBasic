@@ -47,6 +47,19 @@ namespace CSBasic4
             Console.WriteLine(Math.Round(52.263));
 
 
+            Product product = new Product();
+            product.name = "감자";
+            product.price = 2000;
+            Console.Write(product.name + " : " + product.price + "원");
+
+
+            Product product2 = new Product() { name = "짜장면", price = 5500 };
+            Product product3 = new Product() { name = "짬뽕", price = 8000 };
+            Product product4 = new Product() { name = "탕수육"};
+            Product product5 = new Product() { price = 999999999 };
+            Product product6 = new Product() { price = 8000, name = "양장피" };
+
+
         }
     }
 
@@ -66,6 +79,18 @@ namespace CSBasic4
             this.outTime = DateTime.Now;
         }
 
+    }
+
+    class MyMath
+    {
+        public static double PI = 3.141592;
+        public int num = 123;
+        public static void Greeting()
+        {
+            //인스턴스 변수에는 인스턴스가 생성될 때 만들어지기때문에 클래스 내에서 인스턴스 변수는 접근이 안됨
+            Console.WriteLine(PI);
+            Console.WriteLine("Greting~!");
+        }
     }
 
 }
