@@ -60,6 +60,23 @@ namespace CSBasic4
             Product product6 = new Product() { price = 8000, name = "양장피" };
 
 
+            List<Student> students = new List<Student>();
+            students.Add(new Student() { name = "한나래", grade = 3 });
+            students.Add(new Student() { name = "김하윤", grade = 2 });
+            students.Add(new Student() { name = "김혜나", grade = 1 });
+            students.Add(new Student() { name = "강예서", grade = 2 });
+            students.Add(new Student() { name = "황우주", grade = 1 });
+            students.Add(new Student() { name = "차기준", grade = 1 });
+
+            foreach(var item in students)
+            {
+                if(item.grade > 1)
+                {
+                    students.Remove(item);
+                }
+                Console.WriteLine(item.name + " : " + item.grade);
+            }
+
         }
     }
 
